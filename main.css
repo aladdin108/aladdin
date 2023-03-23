@@ -38,25 +38,26 @@ button:active .button_top {
     /* Push the button downwards when pressed */
     transform: translateY(0);
 }
+
 .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  
-  .container {
+}
+
+.container {
     display: block;
     position: relative;
     cursor: pointer;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-  }
-  
-  .container svg {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container svg {
     position: relative;
     top: 100;
     left: 0;
@@ -65,22 +66,25 @@ button:active .button_top {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     fill: #666;
-  }
-  
-  .container svg:hover {
+}
+
+.container svg:hover {
     -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  
-  .container input:checked ~ svg {
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.container input:checked~svg {
     fill: #E3474F;
-  }
-  .love-heart:before,#switch {
+}
+
+.love-heart:before,
+#switch {
     display: none;
-   }
-   
-   .love-heart, .love-heart::after {
+}
+
+.love-heart,
+.love-heart::after {
     border-color: hsl(231deg 28% 86%);
     border: 1px solid;
     border-top-left-radius: 100px;
@@ -88,9 +92,9 @@ button:active .button_top {
     width: 10px;
     height: 8px;
     border-bottom: 0
-   }
-   
-   .round {
+}
+
+.round {
     position: absolute;
     z-index: 1;
     width: 8px;
@@ -102,43 +106,43 @@ button:active .button_top {
     bottom: -1px;
     transition: all .5s ease;
     animation: check-animation2 .5s forwards;
-   }
-   
-   input:checked + label .round {
+}
+
+input:checked+label .round {
     transform: translate(0px, 0px);
     animation: check-animation .5s forwards;
     background-color: hsl(0deg 0% 100%);
-   }
-   
-   @keyframes check-animation {
+}
+
+@keyframes check-animation {
     0% {
-     transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
     }
-   
+
     50% {
-     transform: translate(0px, 7px);
+        transform: translate(0px, 7px);
     }
-   
+
     100% {
-     transform: translate(7px, 7px);
+        transform: translate(7px, 7px);
     }
-   }
-   
-   @keyframes check-animation2 {
+}
+
+@keyframes check-animation2 {
     0% {
-     transform: translate(7px, 7px);
+        transform: translate(7px, 7px);
     }
-   
+
     50% {
-     transform: translate(0px, 7px);
+        transform: translate(0px, 7px);
     }
-   
+
     100% {
-     transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
     }
-   }
-   
-   .love-heart {
+}
+
+.love-heart {
     box-sizing: border-box;
     position: relative;
     transform: rotate(-45deg) translate(-50%, -33px) scale(4);
@@ -146,28 +150,31 @@ button:active .button_top {
     border-color: hsl(231deg 28% 86%);
     cursor: pointer;
     top: 0;
-   }
-   
-   input:checked + .love-heart, input:checked + .love-heart::after, input:checked + .love-heart .bottom {
+}
+
+input:checked+.love-heart,
+input:checked+.love-heart::after,
+input:checked+.love-heart .bottom {
     border-color: hsl(347deg 81% 61%);
     box-shadow: inset 6px -5px 0px 2px hsl(347deg 99% 72%);
-   }
-   
-   .love-heart::after, .love-heart .bottom {
+}
+
+.love-heart::after,
+.love-heart .bottom {
     content: "";
     display: block;
     box-sizing: border-box;
     position: absolute;
     border-color: hsl(231deg 28% 86%);
-   }
-   
-   .love-heart::after {
+}
+
+.love-heart::after {
     right: -9px;
     transform: rotate(90deg);
     top: 7px;
-   }
-   
-   .love-heart .bottom {
+}
+
+.love-heart .bottom {
     width: 11px;
     height: 11px;
     border-left: 1px solid;
@@ -176,5 +183,4 @@ button:active .button_top {
     left: -1px;
     top: 5px;
     border-radius: 0px 0px 0px 5px;
-   }
-   
+}
