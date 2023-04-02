@@ -15,15 +15,15 @@ body {
     max-width: 90rem;
     margin: 2rem auto;
     padding: 0px 2rem;
-}
+} 
 
 .header {
     padding: 2rem;
     margin: 1rem 0px;
     text-align: center;
 }
-
-header>.title {
+ 
+header > .title {
     margin-bottom: 1rem;
 }
 
@@ -41,10 +41,11 @@ header>.title {
 .tribute blockquote {
     text-align: center;
     font-size: 3rem;
+
 }
 
 .tribute img {
-    max-width: 100%;
+    max-width: 110%;
 }
 
 .bio {
@@ -53,18 +54,18 @@ header>.title {
     max-width: 40rem;
 }
 
-.bio>h2 {
+.bio > h2 {
     margin-bottom: 1rem;
     font-size: 3rem;
     line-height: 1.2;
 }
 
-.bio>p {
+.bio > p {
     font-size: 1.2rem;
     line-height: 1.4;
 }
 
-hr {
+.bio > hr {
     margin-top: 2rem;
-
-}
+    
+  }
