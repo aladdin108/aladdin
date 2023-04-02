@@ -41,19 +41,10 @@ header>.title {
 .tribute blockquote {
     text-align: center;
     font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 200px;
-
 }
 
 .tribute img {
-    max-width: 110%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 200px;
+    max-width: 100%;
 }
 
 .bio {
